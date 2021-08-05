@@ -37,4 +37,4 @@ input_file$disease <- data_splitter(input_file)
 
 ############################### Outputs #################################
 
-write.csv(input_file, file = paste0("split_", cmd_args), quote = F, row.names = F)
+write.csv(input_file, file = paste0("split_", gsub("^.*/", "", cmd_args)), quote = F, row.names = F)
